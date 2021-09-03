@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/styles/index.css" type="text/css">
+        <link rel="shortcut icon" href="../assets/imgs/favicon.png" type="image/png">
+        <title>Stock Market | Sign Up</title>    
+        <nav loadhtml="nav" class="navbar"></nav>
+    </head>
+    <body id="signuppage">
+        <div class="container">
+            <p>Become a Member</p>
+            <form class="flex-box" id="form"> 
+                <div class="flex-1">
+                    <label for="nickname" class="nickname">Nickname:</label>
+                    <input type="text" id="nickname" placeholder="Your Nickname" class="input" required>
+                </div>
+                <div class="flex-2">
+                    <label for="pw" class="pw">Password: </label>
+                    <input type="password" id="pw1" placeholder="Your Password" class="input" required>
+                </div>
+                <div class="flex-3">
+                    <label for="cpw" class="cpw"> Confirm Password:</label>
+                    <input type="password" id="pw2" placeholder="Your Password" class="input" required>
+                </div>
+                <div class="flex-4">
+                    <label for="email" class="email"> Email:</label>
+                    <input type="text" id="umail" placeholder="Your Email" class="input" required>
+                </div>
+                <div class="flex-5">
+                    <button onclick="store()" id="formsubmit" type="submit" class="btn">Sign Up</button>    
+                </div> 
+            </form>
+        </div>   
+        <script src="../assets/js/user.js"> </script>    
+        <script src="../assets/js/module.js"></script>
+    </body>
+</html>

@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar CSS */
+.navbar {
+  z-index: 100;
+  background-color: #1891E9;
+  box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
+  width: 100vw;
+  margin: 0 auto;
+  height: 7em;
+  overflow: hidden;
+  top: 0;
+  position: sticky;
+}
+
+.logo {
+  width: 8rem;
+  height: 9rem;
+  left: 5.313em;
+  display: inline-block;
+  margin-left: 1rem;
+  margin-top: 0rem;
+}
+
+.background-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+.link_logo {
+  margin-right: 40rem;
+  display: inline-block;
+  overflow: auto;
+}
+
+.texto-bienvenida {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 850px) {
+  .logo {
+    display: none;
+  }
+
+  .link_logo {
+    display: none;
+  }
+}
+.navbar_items {
+  list-style: none;
+  display: inline-block;
+  position: fixed;
+  right: 20.875em;
+  top: 2.5em;
+  white-space: nowrap;
+}
+
+.navbar_item {
+  font-family: "Montserrat", sans-serif;
+  padding: 0px 20px;
+  font-weight: 500;
+  font-size: 1em;
+  color: #edf0f1;
+  text-decoration: none;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.navbar_link,
+.navbar_link:link,
+.navbar_link:visited {
+  transition: all 0.3s ease 0s;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  color: #edf0f1;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.navbar_link:hover {
+  color: black;
+  transform: scale(1.2);
+}
+
+.sign_up {
+  margin-left: 1.25em;
+  padding: 0.563em 1.563em;
+  background-color: #C8BC07;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  color: #edf0f1;
+  text-decoration: none;
+  white-space: nowrap;
+  position: fixed;
+  right: 5.25em;
+  top: 2em;
+  overflow: hidden;
+}
+
+.log_in {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: #C8BC07;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+  position: fixed;
+  right: 13.625em;
+  top: 2em;
+  overflow: hidden;
+}
+
+.log_in:hover, .sign_up:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* End of Navabar CSS*/
+/* About CSS*/
+
+/* Log In CSS*/
+body#loginpage {
+  background-color: beige;
+  background-size: cover;
+  height: auto;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+#loginpage .container {
+  max-width: 649px;
+  height: 490px;
+  background: #fff;
+  margin: 50px auto;
+  box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
+  box-sizing: border-box;
+  padding: 40px;
+  margin-top: 7em;
+}
+#loginpage p {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 45px;
+  margin-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 3.5rem;
+  color: #C8BC07;
+}
+#loginpage .input {
+  width: 25rem;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid #e9eaea;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  transform: all 0.5s ease;
+  font-family: "Montserrat", sans-serif;
+}
+
+#loginpage .flex-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#loginpage .flex-1,
+#loginpage .flex-2,
+#loginpage .flex-3,
+#loginpage .flex-4 {
+  display: flex;
+  padding: 1rem;
+  align-items: baseline;
+}
+#loginpage .pw,
+#loginpage .nickname {
+  padding: 1rem;
+  width: 118px;
+}
+#loginpage .forgotten {
+  padding: 1rem;
+}
+#loginpage .btn {
+  width: 250px;
+  background-color: #0088a9;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50px;
+  margin: 0 auto;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  text-align: center;
+}
+#loginpage .flex-4 a:link, #loginpage a:visited {
+  text-decoration: none;
+}
+#loginpage .btn:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+#loginpage .input:focus {
+  border: 2px solid #486255;
+}
+#loginpage ::-webkit-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Sign Up CSS*/
+body#signuppage {
+  background-color: beige;
+  background-size: cover;
+  height: auto;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+#signuppage .container {
+  max-width: 649px;
+  height: 600px;
+  background: #fff;
+  margin: 50px auto;
+  box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
+  box-sizing: border-box;
+  padding: 40px;
+  margin-top: 5em;
+}
+#signuppage p {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 45px;
+  margin-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 3.5rem;
+  color: #C8BC07;
+}
+#signuppage .input {
+  width: 25rem;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid #e9eaea;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  transform: all 0.5s ease;
+  font-family: "Montserrat", sans-serif;
+}
+#signuppage .flex-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#signuppage .flex-1,
+#signuppage .flex-2,
+#signuppage .flex-3,
+#signuppage .flex-4,
+#signuppage .flex-5 {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  align-items: baseline;
+}
+#signuppage .pw,
+#signuppage .uname,
+#signuppage .cpw,
+#signuppage .email {
+  padding: 1rem;
+  width: 118px;
+}
+#signuppage .btn {
+  width: 250px;
+  background-color: #0088a9;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50px;
+  margin: 0 auto;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  text-align: center;
+}
+#signuppage .btn:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+#signuppage .input:focus {
+  border: 2px solid #486255;
+}
+#signuppage ::-webkit-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* My Stocks CSS*/
+body#my_stocks {
+  background-color: beige;
+  background-size: cover;
+  height: auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+#my_stocks .stocks_data {
+  border-radius: 5px;
+  max-width: 800px;
+  height: 400px;
+  background: #fff;
+  margin: 50px auto;
+  box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
+  box-sizing: border-box;
+  padding: 20px;
+  margin-top: 2em;
+}
+#my_stocks p {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #C8BC07;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 3.5rem;
+}
+
+#transactions_text {
+  text-align: justify;
+  color
+  max-width: 450px;
+  height: 300px;
+  background: #fff;
+  margin: 50px auto;
+  box-sizing: border-box;
+  padding: 40px;
+  margin-top: 3em;
+  overflow: scroll;
+}
+
+#transactions_text h6 {
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Navbar CSS */
+.navbar#navloged {
+  z-index: 100;
+  background-color: #1891E9;
+  box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
+  width: 100vw;
+  min-width: 1100px;
+  margin: 0 auto;
+  height: 7em;
+  overflow: hidden;
+  top: 0;
+  position: sticky;
+}
+.navbar#navloged .logo {
+  width: 8rem;
+  height: 9rem;
+  left: 5.313em;
+  display: inline-block;
+  margin-left: 1rem;
+  margin-top: 0rem;
+}
+.navbar#navloged .background-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+.navbar#navloged .link_logo {
+  margin-right: 40rem;
+  display: inline-block;
+  overflow: auto;
+}
+.navbar#navloged .texto-bienvenida {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+@media screen and (max-width: 880px) {
+  .navbar#navloged .logo {
+    display: none;
+  }
+  .navbar#navloged .link_logo {
+    display: none;
+  }
+}
+.navbar#navloged .navbar_items {
+  list-style: none;
+  display: inline-block;
+  position: fixed;
+  right: 10.875em;
+  top: 2.5em;
+  white-space: nowrap;
+}
+.navbar#navloged .navbar_item {
+  font-family: "Montserrat", sans-serif;
+  padding: 0px 20px;
+  font-weight: 500;
+  font-size: 1em;
+  color: #edf0f1;
+  text-decoration: none;
+  display: inline-block;
+  overflow: hidden;
+}
+.navbar#navloged .navbar_link,
+.navbar#navloged .navbar_link:link,
+.navbar#navloged .navbar_link:visited {
+  transition: all 0.3s ease 0s;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  color: #edf0f1;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.navbar#navloged .navbar_link:hover {
+  color: black;
+  transform: scale(1.2);
+}
+.navbar#navloged .log_out {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: #C8BC07;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+  position: fixed;
+  right: 3.625em;
+  top: 2em;
+  overflow: hidden;
+}
+.navbar#navloged .log_out:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* End of Navabar CSS*/
