@@ -52,7 +52,7 @@ async function store() {
                 alert('Username taken');
             }else{
                 (async () => {
-                    const rawResponse = await fetch('http://stockmarketapi.tk/sign_up', {
+                    let id = await fetch('http://stockmarketapi.tk/sign_up', {
                       method: 'POST',
                       headers: {
                         'Accept': 'application/json',
@@ -60,7 +60,14 @@ async function store() {
                       },
                       body: JSON.stringify(newUser)
                     })
-                    const content = await rawResponse.json();
+                    .then(res => res.json())
+                    .then(res => {return res});
+                    
+                    let current_user = {
+                        nickname: nickname.value,
+                        id: id
+                    };
+                    localStorage.setItem('current_user', JSON.stringify(current_user));
                   })();
 
                 alert('Your account has been created');
@@ -69,15 +76,22 @@ async function store() {
             }
         }else{
             (async () => {
-                const rawResponse = await fetch('http://stockmarketapi.tk/sign_up', {
-                    method: 'POST',
-                    headers: {
-                        'Accept': 'application/json',
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(newUser)
-                })
-                const content = await rawResponse.json();
+            	let id = await fetch('http://stockmarketapi.tk/sign_up', {
+            		method: 'POST',
+            		headers: {
+            			'Accept': 'application/json',
+            			'Content-Type': 'application/json'
+            		},
+            		body: JSON.stringify(newUser)
+            	})
+            	.then(res => res.json())
+            	.then(res => {return res});
+
+            	let current_user = {
+            		nickname: nickname.value,
+            		id: id
+            	};
+            	localStorage.setItem('current_user', JSON.stringify(current_user));
             })();
 
             alert('Your account has been created');
