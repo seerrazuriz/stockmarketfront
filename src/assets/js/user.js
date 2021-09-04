@@ -65,7 +65,8 @@ async function store() {
                     
                     let current_user = {
                         nickname: userData.nickname,
-                        id: userData.id
+                        id: userData.id,
+                        userData: userData
                     };
                     localStorage.setItem('current_user', JSON.stringify(current_user));
                   })();
@@ -89,7 +90,8 @@ async function store() {
 
             	let current_user = {
             		nickname: userData.nickname,
-            		id: userData.id
+            		id: userData.id,
+                    userData: userData
             	};
             	localStorage.setItem('current_user', JSON.stringify(current_user));
             })();
