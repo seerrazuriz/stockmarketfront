@@ -52,7 +52,7 @@ async function store() {
                 alert('Username taken');
             }else{
                 (async () => {
-                    let userId = await fetch('http://stockmarketapi.tk/sign_up', {
+                    let userData = await fetch('http://stockmarketapi.tk/sign_up', {
                       method: 'POST',
                       headers: {
                         'Accept': 'application/json',
@@ -62,12 +62,13 @@ async function store() {
                     })
                     .then(res => res.json())
                     .then(res => {return res});
-                    
                     let current_user = {
-                        nickname: newUser.nickname,
-                        id: userId
+                        nickname: userData.nickname,
+                        id: userData.id
                     };
+
                     localStorage.setItem('current_user', JSON.stringify(current_user));
+                    
                   })();
 
                 alert('Your account has been created');
@@ -76,7 +77,7 @@ async function store() {
             }
         }else{
             (async () => {
-            	let userId = await fetch('http://stockmarketapi.tk/sign_up', {
+            	let userData = await fetch('http://stockmarketapi.tk/sign_up', {
             		method: 'POST',
             		headers: {
             			'Accept': 'application/json',
@@ -88,8 +89,8 @@ async function store() {
             	.then(res => {return res});
 
             	let current_user = {
-            		nickname: newUser.nickname,
-            		id: userId
+            		nickname: userData.nickname,
+            		id: userData.id
             	};
             	localStorage.setItem('current_user', JSON.stringify(current_user));
             })();
