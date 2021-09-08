@@ -1,6 +1,6 @@
 async function fetch_transactions() { 
     let user = JSON.parse(localStorage.getItem('current_user'));
-    const rawResponse = await fetch(`http://stockmarketapi.tk/my_transactions/${user.id}`, {
+    const rawResponse = await fetch(`https://stockmarketapi.tk/my_transactions/${user.id}`, {
         method: 'GET'})
     .then(res => res.json())
     .then(res => {return res});

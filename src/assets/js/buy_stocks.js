@@ -1,5 +1,5 @@
 async function fetch_stocks() { 
-    const rawResponse = await fetch('http://stockmarketapi.tk/stocks', {
+    const rawResponse = await fetch('https://stockmarketapi.tk/stocks', {
         method: 'GET'})
     .then(res => res.json())
     .then(res => {return res});
@@ -19,7 +19,7 @@ async function buy(){
     let user = JSON.parse(localStorage.getItem('current_user'));
     var transaction = {stockType_id: stockId, owner_id: user.id, quantity: quantity};
     (async () => {
-    	const rawResponse = await fetch('http://stockmarketapi.tk/buy_stock', {
+    	const rawResponse = await fetch('https://stockmarketapi.tk/buy_stock', {
     		method: 'POST',
             headers: {
             	'Accept': 'application/json',
