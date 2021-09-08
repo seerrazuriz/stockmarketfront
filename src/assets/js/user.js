@@ -10,7 +10,7 @@ function validateEmail(mail){
 }
 
 async function fetch_nicknames() { 
-    const rawResponse = await fetch('http://stockmarketapi.tk/users', {
+    const rawResponse = await fetch('https://stockmarketapi.tk/users', {
         method: 'GET'})
     .then(res => res.json())
     .then(res => {return res});
@@ -52,7 +52,7 @@ async function store() {
                 alert('Username taken');
             }else{
                 (async () => {
-                    let userId = await fetch('http://stockmarketapi.tk/sign_up', {
+                    let userId = await fetch('https://stockmarketapi.tk/sign_up', {
                       method: 'POST',
                       headers: {
                         'Accept': 'application/json',
@@ -77,7 +77,7 @@ async function store() {
             }
         }else{
             (async () => {
-            	let userId = await fetch('http://stockmarketapi.tk/sign_up', {
+            	let userId = await fetch('https://stockmarketapi.tk/sign_up', {
             		method: 'POST',
             		headers: {
             			'Accept': 'application/json',
